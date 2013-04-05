@@ -1,0 +1,8 @@
+ 6,5	Konektory RJ11
+19	Procesor
+ 7,5	Bus Driver
+ 4,4	Pinhead
+ 2,6	Tlačítko
+ 4,7	Stabilizátor
+--------------------
+45	Celkem
