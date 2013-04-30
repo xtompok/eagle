@@ -10589,6 +10589,16 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <text x="-4.5056" y="4.6326" size="1.27" layer="25">&gt;NAME</text>
 <text x="-4.5056" y="-6.4106" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="L1206">
+<wire x1="-0.965" y1="0.787" x2="0.965" y2="0.787" width="0.1016" layer="51"/>
+<wire x1="-0.965" y1="-0.787" x2="0.965" y2="-0.787" width="0.1016" layer="51"/>
+<smd name="1" x="-1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
+<smd name="2" x="1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
+<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.7018" y1="-0.8509" x2="-0.9517" y2="0.8491" layer="51"/>
+<rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="R-EU">
@@ -14289,6 +14299,15 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="" package="L1206">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 </devicesets>
@@ -16104,8 +16123,10 @@ Source: 008-0260-0_E.pdf</description>
 <part name="R10" library="rcl" deviceset="R-EU_" device="R1206" value="0R"/>
 <part name="R20" library="rcl" deviceset="R-EU_" device="R1206" value="0R"/>
 <part name="P+10" library="supply1" deviceset="+5V" device=""/>
-<part name="L1" library="rcl" deviceset="L-EU" device="L1812" value="10uH"/>
 <part name="PWR" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="C7" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
+<part name="GND15" library="supply1" deviceset="GND" device=""/>
+<part name="L2" library="rcl" deviceset="L-EU" device="" value="10uH"/>
 </parts>
 <sheets>
 <sheet>
@@ -16179,8 +16200,10 @@ Source: 008-0260-0_E.pdf</description>
 <instance part="R10" gate="G$1" x="55.88" y="38.1" rot="R270"/>
 <instance part="R20" gate="G$1" x="-10.16" y="-86.36"/>
 <instance part="P+10" gate="1" x="22.86" y="-58.42"/>
-<instance part="L1" gate="G$1" x="27.94" y="-63.5" rot="R90"/>
 <instance part="PWR" gate="G$1" x="7.62" y="-73.66"/>
+<instance part="C7" gate="G$1" x="48.26" y="-68.58" rot="R180"/>
+<instance part="GND15" gate="1" x="48.26" y="-76.2"/>
+<instance part="L2" gate="G$1" x="27.94" y="-63.5" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -16267,8 +16290,8 @@ Source: 008-0260-0_E.pdf</description>
 <wire x1="12.7" y1="81.28" x2="12.7" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="L1" gate="G$1" pin="1"/>
 <pinref part="P+10" gate="1" pin="+5V"/>
+<pinref part="L2" gate="G$1" pin="1"/>
 <wire x1="22.86" y1="-63.5" x2="22.86" y2="-60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -16394,6 +16417,11 @@ Source: 008-0260-0_E.pdf</description>
 <pinref part="C1" gate="G$1" pin="1"/>
 <pinref part="GND11" gate="1" pin="GND"/>
 <wire x1="35.56" y1="-71.12" x2="35.56" y2="-73.66" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C7" gate="G$1" pin="1"/>
+<pinref part="GND15" gate="1" pin="GND"/>
+<wire x1="48.26" y1="-71.12" x2="48.26" y2="-73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -16730,12 +16758,19 @@ Source: 008-0260-0_E.pdf</description>
 </net>
 <net name="N$19" class="0">
 <segment>
-<pinref part="L1" gate="G$1" pin="2"/>
 <pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="33.02" y1="-63.5" x2="35.56" y2="-63.5" width="0.1524" layer="91"/>
 <pinref part="U1" gate="A" pin="AVCC"/>
 <wire x1="35.56" y1="-63.5" x2="38.1" y2="-63.5" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="-63.5" x2="38.1" y2="-60.96" width="0.1524" layer="91"/>
+<pinref part="L2" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$34" class="0">
+<segment>
+<pinref part="C7" gate="G$1" pin="2"/>
+<pinref part="U1" gate="A" pin="AREF"/>
+<wire x1="48.26" y1="-63.5" x2="48.26" y2="-60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
