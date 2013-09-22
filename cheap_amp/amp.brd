@@ -6,13 +6,13 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
@@ -32,19 +32,19 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="no"/>
@@ -53,6 +53,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
 <layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
+<layer number="116" name="centerDrill" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
 <plain>
@@ -66,11 +67,34 @@
 <dimension x1="0" y1="17.77" x2="0" y2="0" x3="-2.54" y3="8.885" textsize="1.778" layer="20"/>
 <text x="23.495" y="1.905" size="1.778" layer="16" font="vector" rot="MR0">-</text>
 <text x="20.955" y="1.905" size="1.778" layer="16" font="vector" rot="MR0">+</text>
-<text x="17.145" y="14.605" size="1.27" layer="16" font="vector" rot="MR0">IN</text>
+<text x="17.145" y="14.605" size="1.524" layer="16" font="vector" rot="MR0">IN</text>
 <text x="16.51" y="11.43" size="1.778" layer="16" font="vector" rot="MR0">-</text>
 <text x="6.35" y="11.43" size="1.27" layer="16" font="vector" rot="MR0">OUT</text>
 <text x="15.875" y="7.62" size="1.778" layer="16" font="vector" rot="MR0">Amp</text>
 <text x="19.05" y="5.715" size="1.778" layer="16" font="vector" rot="MR0">Jethro</text>
+<text x="19.05" y="12.7" size="1.016" layer="16" font="vector" rot="MR270">2013</text>
+<circle x="5.08" y="15.24" radius="0.275" width="0.15" layer="116"/>
+<circle x="22.86" y="15.24" radius="0.275" width="0.15" layer="116"/>
+<circle x="20.32" y="10.16" radius="0.328" width="0.256" layer="116"/>
+<circle x="22.86" y="10.16" radius="0.328" width="0.256" layer="116"/>
+<circle x="8.89" y="12.7" radius="0.328" width="0.256" layer="116"/>
+<circle x="8.89" y="15.24" radius="0.328" width="0.256" layer="116"/>
+<circle x="3.81" y="2.54" radius="0.328" width="0.256" layer="116"/>
+<circle x="3.81" y="5.08" radius="0.328" width="0.256" layer="116"/>
+<circle x="8.89" y="2.54" radius="0.328" width="0.256" layer="116"/>
+<circle x="11.43" y="2.54" radius="0.328" width="0.256" layer="116"/>
+<circle x="13.97" y="2.54" radius="0.328" width="0.256" layer="116"/>
+<circle x="16.51" y="2.54" radius="0.328" width="0.256" layer="116"/>
+<circle x="16.51" y="10.16" radius="0.328" width="0.256" layer="116"/>
+<circle x="13.97" y="10.16" radius="0.328" width="0.256" layer="116"/>
+<circle x="11.43" y="10.16" radius="0.328" width="0.256" layer="116"/>
+<circle x="8.89" y="10.16" radius="0.328" width="0.256" layer="116"/>
+<circle x="13.97" y="15.24" radius="0.379" width="0.358" layer="116"/>
+<circle x="13.97" y="12.7" radius="0.379" width="0.358" layer="116"/>
+<circle x="3.81" y="10.16" radius="0.379" width="0.358" layer="116"/>
+<circle x="6.35" y="10.16" radius="0.379" width="0.358" layer="116"/>
+<circle x="22.86" y="5.08" radius="0.379" width="0.358" layer="116"/>
+<circle x="20.32" y="5.08" radius="0.379" width="0.358" layer="116"/>
 </plain>
 <libraries>
 <library name="TDA2822M">
