@@ -18329,7 +18329,7 @@ grounded</text>
 <part name="SWITCH_PRIMARY" library="#Svorkovnice" deviceset="AK500/2" device=""/>
 <part name="CHARGE" library="#Svorkovnice" deviceset="AK500/2" device=""/>
 <part name="D1" library="led" deviceset="LED" device="3MM"/>
-<part name="R3" library="#PaJa_30" deviceset="R" device="_SMD_0805" value="150"/>
+<part name="R3" library="#PaJa_30" deviceset="R" device="_SMD_0805" value="330"/>
 <part name="X2" library="D-USBcon" deviceset="USB-787616GROUNDED" device=""/>
 <part name="X3" library="D-USBcon" deviceset="USB-787616GROUNDED" device=""/>
 <part name="X4" library="D-USBcon" deviceset="USB-787616GROUNDED" device=""/>
@@ -18370,7 +18370,7 @@ grounded</text>
 <part name="R7" library="rcl" deviceset="R-EU_" device="M0805" value="56R"/>
 <part name="R8" library="rcl" deviceset="R-EU_" device="M0805" value="3k"/>
 <part name="C1" library="rcl" deviceset="C-EU" device="C0805" value="860p"/>
-<part name="C2" library="rcl" deviceset="CPOL-EU" device="E5-8.5"/>
+<part name="C2" library="rcl" deviceset="CPOL-EU" device="E5-8.5" value="100u"/>
 <part name="T1" library="transistor" deviceset="BD244" device=""/>
 <part name="NAP1" library="#PaJa_30" deviceset="+12V" device=""/>
 <part name="GND1" library="#PaJa_30" deviceset="GND" device=""/>
@@ -18382,12 +18382,12 @@ grounded</text>
 <part name="GND11" library="#PaJa_30" deviceset="GND" device=""/>
 <part name="GND12" library="#PaJa_30" deviceset="GND" device=""/>
 <part name="D3" library="led" deviceset="LED" device="3MM"/>
-<part name="R9" library="#PaJa_30" deviceset="R" device="_SMD_0805" value="150"/>
+<part name="R9" library="#PaJa_30" deviceset="R" device="_SMD_0805" value="1k2"/>
 <part name="NAP6" library="#PaJa_30" deviceset="+12V" device=""/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="GND13" library="#PaJa_30" deviceset="GND" device=""/>
 <part name="GND14" library="#PaJa_30" deviceset="GND" device=""/>
-<part name="C3" library="rcl" deviceset="CPOL-EU" device="E5-8.5"/>
+<part name="C3" library="rcl" deviceset="CPOL-EU" device="E5-8.5" value="47u"/>
 <part name="C4" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
 <part name="GND15" library="#PaJa_30" deviceset="GND" device=""/>
 </parts>
