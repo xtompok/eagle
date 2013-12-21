@@ -18366,8 +18366,8 @@ grounded</text>
 <part name="D2" library="diode" deviceset="1N581*" device="" technology="7-B" value="1N5822"/>
 <part name="R4" library="rcl" deviceset="R-EU_" device="M0805" value="0R1"/>
 <part name="R5" library="rcl" deviceset="R-EU_" device="M0805" value="1k"/>
-<part name="R6" library="rcl" deviceset="R-EU_" device="M0805" value="100R"/>
-<part name="R7" library="rcl" deviceset="R-EU_" device="M0805" value="56R"/>
+<part name="R6" library="rcl" deviceset="R-EU_" device="M0805" value="100"/>
+<part name="R7" library="rcl" deviceset="R-EU_" device="M0805" value="56"/>
 <part name="R8" library="rcl" deviceset="R-EU_" device="M0805" value="3k"/>
 <part name="C1" library="rcl" deviceset="C-EU" device="C0805" value="860p"/>
 <part name="C2" library="rcl" deviceset="CPOL-EU" device="E5-8.5" value="100u"/>
@@ -18458,17 +18458,23 @@ grounded</text>
 <instance part="SICK_SW" gate="KON" x="208.28" y="88.9"/>
 <instance part="TLACITKO" gate="KON" x="43.18" y="15.24" rot="R90"/>
 <instance part="USB_SW" gate="KON" x="271.78" y="154.94"/>
-<instance part="T2" gate="G$1" x="66.04" y="38.1" rot="MR0"/>
+<instance part="T2" gate="G$1" x="66.04" y="38.1" smashed="yes" rot="MR0">
+<attribute name="NAME" x="69.85" y="39.37" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="76.2" y="43.18" size="1.778" layer="96" rot="MR0"/>
+</instance>
 <instance part="IC1" gate="G$1" x="40.64" y="-40.64"/>
 <instance part="D2" gate="G$1" x="83.82" y="-50.8" rot="R90"/>
 <instance part="R4" gate="G$1" x="17.78" y="-40.64" rot="R90"/>
 <instance part="R5" gate="G$1" x="-2.54" y="-63.5" rot="R90"/>
 <instance part="R6" gate="G$1" x="66.04" y="-40.64"/>
 <instance part="R7" gate="G$1" x="73.66" y="-35.56" rot="R90"/>
-<instance part="R8" gate="G$1" x="-2.54" y="-53.34" rot="R270"/>
+<instance part="R8" gate="G$1" x="-2.54" y="-53.34" rot="MR270"/>
 <instance part="C1" gate="G$1" x="66.04" y="-50.8"/>
 <instance part="C2" gate="G$1" x="99.06" y="-50.8"/>
-<instance part="T1" gate="G$1" x="81.28" y="-40.64"/>
+<instance part="T1" gate="G$1" x="81.28" y="-40.64" smashed="yes">
+<attribute name="NAME" x="78.74" y="-40.64" size="1.778" layer="95"/>
+<attribute name="VALUE" x="83.82" y="-40.64" size="1.778" layer="96"/>
+</instance>
 <instance part="NAP1" gate="+12" x="0" y="-33.02" rot="R90"/>
 <instance part="GND1" gate="ZEM" x="83.82" y="-60.96"/>
 <instance part="P+4" gate="1" x="104.14" y="-45.72" rot="R270"/>
