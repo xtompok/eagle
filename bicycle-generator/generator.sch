@@ -20523,7 +20523,7 @@ grid 5.08 mm</description>
 <part name="P+3" library="supply1" deviceset="+5V" device=""/>
 <part name="C3" library="rcl" deviceset="CPOL-EU" device="D" value="100u"/>
 <part name="C4" library="rcl" deviceset="CPOL-EU" device="D" value="47u"/>
-<part name="L1" library="rcl" deviceset="L-EU" device="PIS2816" value="47u "/>
+<part name="L1" library="rcl" deviceset="L-EU" device="TJ3-U1" value="47u "/>
 <part name="D18" library="diode" deviceset="SCHOTTKY-DIODE" device="SMD" value="SK210"/>
 <part name="SUPPLY5" library="supply2" deviceset="V+" device=""/>
 <part name="K7" library="#PaJa_konektory" deviceset="ARK500/2" device=""/>
